@@ -1,18 +1,14 @@
 import React from "react";
 
-const Button = (props) => {
+const Button = ({ btnName, isConvert, onClick }) => {
   return (
-    <div
-      className={`btn ${
-        props.isConvert
-          ? "btn-primary"
-          : // : props.isError
-            // ? "btn-danger"
-            "btn-success"
-      }`}
+    <button
+      type="button"
+      onClick={onClick}
+      className={`btn ${isConvert ? "btn-primary" : "btn-success"}`}
     >
-      {props.btnName}
-    </div>
+      {btnName}
+    </button>
   );
 };
 

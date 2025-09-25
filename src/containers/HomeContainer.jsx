@@ -1,13 +1,17 @@
 import React from "react";
 import MainLayout from "../layouts/MainLayout";
+import brandLogo from "/assets/brand-logo-low.png";
 
 const HomeContainer = () => {
   return (
-    <div className="px-4 py-5 my-5 text-center">
+    <div className="px-4 py-5 my-5 text-center" style={{ display: "flex" }}>
+      <div>
+        <img src={brandLogo} style={{ height: 100, widht: 100 }} />
+      </div>
       <h1 className="display-5 fw-bold text-body-emphasis">
-        HTML to PDF convert Online free for everyone
+        Prepare exciting materials
       </h1>
-      <p className="lead mb-4">convert web pages</p>
+      {/* <p className="lead mb-4">convert web pages</p> */}
       <MainLayout />
     </div>
   );
