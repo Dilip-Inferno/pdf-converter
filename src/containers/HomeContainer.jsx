@@ -8,7 +8,7 @@ const HomeContainer = () => {
       <div>
         <img src={brandLogo} style={{ height: 100, widht: 100 }} />
       </div>
-      <h1 className="display-5 fw-bold text-body-emphasis">
+      <h1 className="display-5 text-body-emphasis poppins-semibold">
         Prepare exciting materials
       </h1>
       {/* <p className="lead mb-4">convert web pages</p> */}
