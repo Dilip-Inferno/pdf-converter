@@ -34,7 +34,7 @@ const MainLayout = () => {
   };
 
   return (
-    <div className="h-100 p-5 text-bg-dark rounded-3">
+    <div className="h-100 p-5 text-bg-white rounded-3">
       {/* Button Row */}
       <div
         style={{
@@ -43,9 +43,10 @@ const MainLayout = () => {
           gap: "10px",
         }}
       >
-        <Button btnName={"Print"} onClick={handlePrint} />
+        <Button isConvert={true} btnName={"Print"} onClick={handlePrint} />
         <Button btnName={"Download"} onClick={handleDownload} />
-        <Button btnName={"Settings"} />
+
+        {/* <Button btnName={"Settings"} /> */}
       </div>
 
       {/* PDF Preview */}
